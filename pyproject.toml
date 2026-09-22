@@ -1,0 +1,20 @@
+[project]
+name = "game-joiner"
+version = "0.1.0"
+description = "Discord and Roblox infrastructure monitoring toolkit"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Game Joiner Team" }]
+dependencies = [
+  "aiohttp>=3.9.0",
+  "discord.py>=2.4.0",
+  "python-socketio>=5.11.0",
+  "python-dotenv>=1.0.1",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["game_joiner", "game_joiner.services"]
